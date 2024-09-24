@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Phadke - Portfolio</title>
+    <style>
+        /* CSS styles */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+            --accent-color: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+
+        .education, .experience, .projects, .skills, .certifications, .extracurricular {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .education h3, .experience h3, .projects h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+        }
+
+        .project h4 {
+            color: var(--accent-color);
+        }
+
+        .skills ul, .certifications ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills li, .certifications li {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sahil Phadke</h1>
+            <nav>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#extracurricular">Extracurricular</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Ramrao Adik Institute of Technology, D. Y. Patil Deemed to be University</h3>
+                <p>B.Tech in Computer Engineering (Data Science), CGPA: 9.31/10</p>
+                <p>July 2021 – Present | Navi Mumbai, India</p>
+            </div>
+            <div class="education">
+                <h3>Guru Nanak Khalsa College of Arts, Science & Commerce</h3>
+                <p>12th Grade, Percentage: 88.17%</p>
+                <p>May 2019 – July 2021 | Matunga, Mumbai</p>
+            </div>
+            <div class="education">
+                <h3>Saraswati Mandir High School</h3>
+                <p>10th Grade, Percentage: 79.80%</p>
+                <p>April 2019 | Mahim, Mumbai</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>International Society of Automation RAIT Student Group</h3>
+                <p>Administrative | July 2023 – Present | Navi Mumbai, India</p>
+                <ul>
+                    <li>Led administrative operations for the college's student chapter of the International Society of Automation (ISA).</li>
+                    <li>Coordinated events, managed budgets, and supervised team members.</li>
+                    <li>Successfully increased student engagement by implementing new initiatives and outreach programs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Trivinsai</h3>
+                <h4>React, CSS, Bootstrap, Vercel | September 2024</h4>
+                <ul>
+                    <li>Developed a comprehensive web application for Trivinsai TechPackTron Solutions Pvt Ltd., utilizing React, CSS, and Bootstrap for a responsive and modern design.</li>
+                    <li>Integrated Vercel for deployment, ensuring smooth and scalable hosting solutions.</li>
+                    <li>Implemented various features to enhance user experience, including intuitive navigation, dynamic content, and interactive elements.</li>
+                    <li>Project Link: <a href="https://trivinsai.com" target="_blank">https://trivinsai.com</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Result Management System</h3>
+                <h4>MERN (MongoDB, Express.js, React, Node.js) | November 2023</h4>
+                <ul>
+                    <li>Engineered a Result Management System using the MERN stack to simplify the process of recording, managing, and accessing student results for educational institutions.</li>
+                    <li>Designed a comprehensive dashboard for administrators to view and manage student data efficiently.</li>
+                    <li>Developed features for teachers to input and update student results, with validation checks to ensure data accuracy.</li>
+                    <li>Implemented responsive UI/UX design to enhance accessibility and usability across various devices.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>URL Shortener</h3>
+                <h4>Express, Node.js, MongoDB, EJS | June 2024</h4>
+                <ul>
+                    <li>Created a URL Shortener service with a back-end built using Express and Node.js, coupled with MongoDB for robust data storage.</li>
+                    <li>Designed and implemented a user-friendly interface using the EJS view engine to render dynamic web pages for URL shortening and management.</li>
+                    <li>Included features for tracking URL usage and providing analytics on link performance.</li>
+                    <li>Ensured data security and efficient URL redirection through optimized code and thorough testing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>Java</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>Git</li>
+                    <li>GitHub Pages</li>
+                    <li>Vercel</li>
+                    <li>MongoDB</li>
+                    <li>EJS</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <ul>
+                    <li>IBM Certified React Developer</li>
+                    <li>IBM Certified Node and Express Developer</li>
+                    <li>Professional Certificate in Cloud and Application Development Foundations by IBM</li>
+                    <li>Business Analytics by Harvard</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="extracurricular">
+            <h2>Extracurricular Activities</h2>
+            <div class="extracurricular">
+                <h3>Road Safety Patrol 2019</h3>
+                <p>Completed training in road and community safety and awareness at Saraswati Mandir High School</p>
+                <ul>
+                    <li>Successfully completed training focused on road and community safety, demonstrating commitment to enhancing public safety awareness.</li>
+                </ul>
+            </div>
+            <div class="extracurricular">
+                <h3>Sacred Heart Competition 2019</h3>
+                <p>Secured Second Place in Road Safety Awareness Project at Sacred Heart Worli</p>
+                <ul>
+                    <li>Participated in the "Our Safety" project focusing on road safety and awareness. Contributed to the team's success.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Sahil Phadke. All rights reserved.</p>
+            <p>Hobbies: Music, Reading, Cricket, Badminton</p>
+        </div>
+    </footer>
+</body>
+</html>
